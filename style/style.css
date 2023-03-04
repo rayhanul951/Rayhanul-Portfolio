@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    font-family: arial;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +51,7 @@ body{
 .card-container .card:hover .box{
     transform: translateY(-50px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
-    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+    background: linear-gradient(45deg, #3e85f4, #4f29cd);
 }
 .card-container .card .box .content{
     padding: 20px;
@@ -231,8 +232,8 @@ input{
 }
 
 .image-container .images .image img:hover{
-    border: 2px solid rgba(19, 116, 180, 0.8);
-    box-shadow: 0px 0px 10px 3px rgba(19, 116, 180, 0.7);   
+    border: 2px solid rgba(62, 133, 244, 0.8);
+    box-shadow: 0px 0px 10px 3px rgba(62, 133, 244, 0.7);   
 }
 /* filter css */
 #logo:checked ~ .image-container> .images > .image:not([class *="logo"]),
@@ -247,6 +248,6 @@ input{
 #mockup:checked ~ .mockup,
 #illustration:checked ~ .illustration,
 #photoshop:checked ~ .photoshop{
-    background-color:slategrey;
+    background-color:#3e85f4;
     color: white;
 }
