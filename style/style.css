@@ -10,7 +10,10 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: #eff5fc;
+    text-align: center;
 }
+
+/* Style for the Service-Section Starts here */
 .card-container{
     display: flex;
     justify-content: center;
@@ -97,8 +100,9 @@ body{
 .card-container .card:hover .box .content a{
     background-color: #ff568f;
 }
+/* Style for the Service-Section Ends here */
 
-/* Style for the Asset-Section Stars here */
+/* Style for the Asset-Section Starts here */
 .drop-container{
     position: relative;
     display: flex;
@@ -173,4 +177,76 @@ body{
 .drop-container .drop .content img{
     width: 120px;
     opacity: .8;
+}
+.drop-container .drop .content .big-img{
+    width: 95px;
+}
+/* Style for the Asset-Section Ends here */
+
+/* Style for the Gallery-Section Stars here */
+.gallery-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-direction: column;
+}
+
+input{
+    display: none;
+}
+
+.tag{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 5px 5px;
+    border-radius: 50px;
+    background-color: #efefef;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+.image-container .images{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-container .images .image{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.image-container .images .image img{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.09);
+}
+
+.image-container .images .image img:hover{
+    border: 2px solid rgba(19, 116, 180, 0.8);
+    box-shadow: 0px 0px 10px 3px rgba(19, 116, 180, 0.7);   
+}
+/* filter css */
+#logo:checked ~ .image-container> .images > .image:not([class *="logo"]),
+#mockup:checked ~ .image-container> .images > .image:not([class *="mockup"]),
+#illustration:checked ~ .image-container> .images > .image:not([class *="illustration"]),
+#photoshop:checked ~ .image-container> .images > .image:not([class *="photoshop"]){
+    display: none;
+}
+
+#all:checked ~ .all,
+#logo:checked ~ .logo,
+#mockup:checked ~ .mockup,
+#illustration:checked ~ .illustration,
+#photoshop:checked ~ .photoshop{
+    background-color:slategrey;
+    color: white;
 }
