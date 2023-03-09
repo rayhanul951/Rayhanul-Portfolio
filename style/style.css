@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    position: relative;
     font-family: arial;
     display: flex;
     flex-direction: column;
@@ -11,8 +12,139 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: #eff5fc;
+    /* for dark mode */
+    /* background-color: #1f1f1f; */
     text-align: center;
 }
+
+/* Style for the Home-Section Starts here */
+#home-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-background{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #3e84f4d2, #4f29cd);
+}
+/* style for background pattern */
+.cover-background img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.cover-background .shape-1s{
+    top: 35%;
+    left:0px;
+    transform: translateY(-50%);
+}
+.cover-background .shape-2s{
+    top: 35%;
+    right: 0;
+    transform:translateY(-50%) rotate(180deg);
+}
+.cover-background .shape-3s{
+    bottom: 35%;
+    right: 0;
+    transform:translateY(50%) rotate(180deg);
+}
+.cover-background .shape-4s{
+    bottom: 35%;
+    left: 0;
+    transform:translateY(50%);
+}
+.cover-background .shape-5s{
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%) rotate(90deg);
+}
+.cover-background .shape-1t{
+    top: 0;
+    left:0px;
+}
+.cover-background .shape-2t{
+    bottom: 0;
+    left:0px;
+    transform: rotate(90deg);
+}
+.cover-background .shape-3t{
+    top: 0;
+    right: 0;
+    transform: rotate(-90deg);
+}
+.cover-background .shape-4t{
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+.cover-background .shape-5t{
+    top: 75px;
+    right: 0;
+    transform: rotate(90deg);
+}
+.cover-background .shape-6t{
+    top: 75px;
+    left: 0;
+    transform: rotate(180deg);
+}
+.cover-background .shape-7t{
+    bottom: 75px;
+    left: 0;
+    transform: rotate(-90deg);
+}
+.cover-background .shape-8t{
+    bottom: 75px;
+    right: 0;
+}
+.cover-background .shape-9t{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+/* Style for cover photo */
+.cover-photo{
+    position: absolute;
+    z-index: 2;
+    height: 70%;
+    width: auto;
+}
+
+.cover-photo img{
+    border-radius: 175px;
+    height: 100%;
+    border: 7px solid rgb(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px 5px rgb(255, 255, 255, 0.5);
+    background-color: rgb(62, 133, 244);
+}
+
+/* style for cover title */
+.cover-title{
+    position: absolute;
+    z-index: 3;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, .5);
+}
+.cover-title h1 span{
+    font-weight: 700;
+    color: #3e85f4;
+    text-shadow: black;
+}
+
+/* Style for the Home-Section Ends here */
 
 /* Style for the Service-Section Starts here */
 .card-container{
