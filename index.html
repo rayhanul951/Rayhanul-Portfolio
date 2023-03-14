@@ -6,9 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayhanul | Portfolio</title>
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="shortcut icon" href="/images/Site-icon.png" type="image/x-icon">
 </head>
 <body>
-    <!-- The Home Section Starts Here -->
+    <!-- The header Starts Here -->
+    <header>
+        <div class="brand">
+            <div class="logo"><img src="/images/Site-icon.png"></div>
+        <div class="brand-name">Rayhanul Rahul</div>
+        </div>
+        <input type="checkbox" name="" id="res-menu">
+
+        <label for="res-menu" class="res">
+            <div class="hamburger">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+        </label>
+        <div class="nav-bar">
+            <ul>
+                <li><a class="active" href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#service-section">Services</a></li>
+                <li><a href="#assets-section">Assets</a></li>
+                <li><a href="#sample-section">Samples</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- The header Ends Here -->
+    <main>
+        <!-- The Home Section Starts Here -->
     <section id="home-section">
         <div class="cover-background">
             <img class="shape-1s" src="/Images/brand-shape-square.png">
@@ -30,24 +60,45 @@
             <img src="/images/me-min.png">
         </div>
         <div class="cover-title">
-            <h1>Wecome to my <span>Portfolio Site</span></h1>
+            <h1>Welcome to my <span>Portfolio Site</span></h1>
         </div>
     </section>
     <!-- The Home Section Ends Here -->
 
+    <!-- The About Section Starts Here -->
+    <section id="about-section">
+        <div class="about-container">
+            <h1 class="section-title">About Myself</h1>
+            <div class="about-content">
+                <div class="about-photo">
+                    <img src="/images/My-Photo-Circuler-min.png">
+                </div>
+                <div class="about-writeup">
+                    <p>
+                        Hello! I am Rayhanul,<br> 
+                        I am a web developer as well as a graphic designer. I'm good at multimedia tools, too. Thus, I can help you build up your brand identity.
+                    </p>
+                    <a href="https://instagram.com/creationsbyrr?igshid=ZDdkNTZiNTM=">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The About Section Ends Here -->
+
     <!-- The Service Section Starts Here -->
     <section id="service-section">
         <div class="card-container">
-            <h1 style="width: 100%; text-align: center;">My Services</h1>
+            <h1 class="section-title">My Services</h1>
             <div class="card">
                 <div class="box">
                     <div class="content">
                         <h2>01</h2>
                         <h3>Web Design</h3>
                         <p>
-                            I can design any type of website with a very unique touch as per as your requirement.
+                            I can design any type of website with a very unique touch as per your requirements.
                         </p>
-                        <a href="#">Get Service</a>
+                        <a href="https://instagram.com/creationsbyrr?igshid=ZDdkNTZiNTM=
+                        " target="_blank">Get Service</a>
                     </div>
                 </div>
             </div>
@@ -57,9 +108,10 @@
                         <h2>02</h2>
                         <h3>Web Development</h3>
                         <p>
-                            I can develop any kind of website efficiently  as per as your requirement.
+                            I can develop any kind of website efficiently as per your requirements.
                         </p>
-                        <a href="#">Get Service</a>
+                        <a href="https://instagram.com/creationsbyrr?igshid=ZDdkNTZiNTM=
+                        " target="_blank">Get Service</a>
                     </div>
                 </div>
             </div>
@@ -67,11 +119,12 @@
                 <div class="box">
                     <div class="content">
                         <h2>03</h2>
-                        <h3>Graphic Design</h3>
+                        <h3>Graphics Design</h3>
                         <p>
-                            I can help you in building your brand identity with my fine graphic designs.
+                            I can help you build your brand identity with my graphic design skills.
                         </p>
-                        <a href="#">Get Service</a>
+                        <a href="https://instagram.com/creationsbyrr?igshid=ZDdkNTZiNTM=
+                        " target="_blank">Get Service</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +135,7 @@
     <!-- The Assets Section Starts Here -->
     <section id="assets-section">
         <div class="drop-container">
-            <h1 style="width: 100%; text-align: center;">My Assets</h1>
+            <h1 class="section-title">My Assets</h1>
             <div class="drop">
                 <div class="content">
                     <img class="big-img" src="/images/Logo-1.png" alt="">
@@ -127,11 +180,27 @@
     </section>
     <!-- The Assets Section Ends Here -->
 
+    <!-- The Sample Section Starts Here -->
+    <section id="sample-section">
+        <div class="sample-container">
+            <h1 class="section-title">My recent work</h1>
+            <div class="sample-content">
+                <div class="sample-photo">
+                    <img src="/images/Website-1.png">
+                </div>
+                <div class="visit-button">
+                    <a href="https://fm-footballmania.netlify.app/" target="_blank">Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The Sample Section Ends Here -->
+
     <!-- The Gallery Section Starts Here -->
     <section id="gallery-section">
         <div class="gallery-container">
             <div class="image-gallery">
-                <h1>Gallery</h1>
+                <h1 class="section-title">Gallery</h1>
                 <input type="radio" name="radiobtn" id="all" checked>
                 <input type="radio" name="radiobtn" id="logo">
                 <input type="radio" name="radiobtn" id="mockup">
@@ -177,6 +246,57 @@
             </div>
         </div>
     </section>
-    <!-- The Gallery Section Ends Here -->  
+    <!-- The Gallery Section Ends Here -->
+    <!-- The Handles Section Starts Here -->
+    <section id="contact-section">
+        <div class="contact-container">
+            <h1 class="section-title">Checkout My Social Handles <br> For more</h1>
+            <div class="contact-content">
+                <div class="socail-handles">
+                    <a href="https://instagram.com/creationsbyrr?igshid=ZDdkNTZiNTM=
+                    " target="_blank">
+                        <div class="socail-handle instragram">
+                            <img src="/images/Icon-1.png" alt="">
+                            <span>Instagram</span>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <div class="socail-handle facebook">
+                            <img src="/images/Icon-2.png" alt="">
+                            <span>Facebook</span>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCJRI_Io9v55QNTZa-pClySQ" target="_blank">
+                        <div class="socail-handle youtube">
+                            <img src="/images/Icon-3.png" alt="">
+                            <span>YouTube</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The Handles Section Ends Here -->
+    </main>
+
+    <!-- The Footer Starts Here -->
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li><a class="active" href="#home-section">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#service-section">Services</a></li>
+                <li><a href="#assets-section">Assets</a></li>
+                <li><a href="">Samples</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p id="mail">mail: rayhanulislam951@gmail.com</p>
+            <p>copyright© Rayhanul Rahul</p>
+            
+        </div>
+    </footer>
+    <!-- The Footer Ends Here -->  
 </body>
 </html>
